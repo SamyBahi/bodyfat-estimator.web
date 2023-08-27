@@ -1,113 +1,213 @@
-import Image from 'next/image'
+import FormCard from "@/components/form/FormCard";
+import Switch from "@/components/form/Switch";
+import { Logo } from "@/components/svgs";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="relative -top-[4rem] items-center flex flex-col h-full p-6 flex-1 w-full lg:static lg:overflow-auto">
+      <div className="w-full max-w-[1000px]">
+        <Logo className="text-4xl fill-secondary lg:hidden mb-6" />
+        <div className="hidden md:block">
+          <h1 className="text-4xl mb-6">Estimate your bodyfat percentage</h1>
+          <p className="opacity-60 font-medium">
+            This web app uses artificial intelligence to estimate your density
+            taking your mensurations as an input, and computes your bodyfat
+            thanks to Siri's formula (1956).
+          </p>
+          <p className="opacity-60 font-medium my-6">
+            To use this tool, just enter your mensurations in the form below and
+            click Estimate to get your results.
+          </p>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+        <form
+          action=""
+          className="w-full grid grid-cols-1 gap-3 md:grid-cols-3 max-w-7xl"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div>
+            <FormCard title="Units">
+              <div className="flex w-full space-x-3">
+                <Switch first="lbs" second="kg" />
+                <Switch first="in." second="cm" />
+              </div>
+            </FormCard>
+          </div>
+          <div className="md:col-span-2">
+            <FormCard title="General Information">
+              <div className="md:flex md:space-x-3">
+                <div className="flex h-10 w-fullitems-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow md:w-1/3">
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    min={1}
+                    max={100}
+                    placeholder="Age"
+                    className="remove-arrow w-full bg-transparent focus:outline-none"
+                    aria-label="Age"
+                  />
+                </div>
+                <div className="flex space-x-3 w-full">
+                  <div className="flex h-10 w-1/2  items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow md:w-full">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Height"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Height"
+                    />
+                  </div>
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow md:w-full">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Weight"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Weight"
+                    />
+                  </div>
+                </div>
+              </div>
+            </FormCard>
+          </div>
+          <div className="md:col-span-2 md:row-span-2">
+            <FormCard title="Upper Body">
+              <div>
+                <div className="flex h-10 w-full items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    min={1}
+                    max={100}
+                    placeholder="Neck"
+                    className="remove-arrow w-full bg-transparent focus:outline-none"
+                    aria-label="Neck"
+                  />
+                </div>
+                <div className="flex space-x-3">
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Chest"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Chest"
+                    />
+                  </div>
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Waist"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Waist"
+                    />
+                  </div>
+                </div>
+                <div className="flex space-x-3">
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Biceps"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Biceps"
+                    />
+                  </div>
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Forearm"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Forearm"
+                    />
+                  </div>
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Wrist"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Wrist"
+                    />
+                  </div>
+                </div>
+              </div>
+            </FormCard>
+          </div>
+          <div className="md:col-span-1 md:row-span-2">
+            <FormCard title="Lower Body">
+              <div>
+                <div className="flex h-10 w-full items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    min={1}
+                    max={100}
+                    placeholder="Thigh"
+                    className="remove-arrow w-full bg-transparent focus:outline-none"
+                    aria-label="Thigh"
+                  />
+                </div>
+                <div className="flex space-x-3">
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Knee"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Knee"
+                    />
+                  </div>
+                  <div className="flex h-10 w-1/2 items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow">
+                    <input
+                      type="number"
+                      name=""
+                      id=""
+                      min={1}
+                      max={100}
+                      placeholder="Ankle"
+                      className="remove-arrow w-full bg-transparent focus:outline-none"
+                      aria-label="Ankle"
+                    />
+                  </div>
+                </div>
+              </div>
+            </FormCard>
+          </div>
+          <div className="w-full flex justify-center md:col-span-3 mt-4 md:mt-20">
+            <button className="p-3 border border-yellow-500/70 text-yellow-500/70 hover:bg-yellow-500/70 hover:text-secondary w-full md:w-1/3 rounded-md transition-all">
+              Estimate
+            </button>
+          </div>
+        </form>
       </div>
     </main>
-  )
+  );
 }
