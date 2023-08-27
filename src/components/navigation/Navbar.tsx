@@ -23,7 +23,7 @@ const items: NavigationItem[] = [
 
 const Navbar = () => {
   return (
-    <nav className="h-16 flex items-center justify-center border-t border-t-secondary/30 lg:flex-col lg:min-h-screen lg:border-t-0 lg:border-r lg:border-r-secondary/30">
+    <nav className="h-16 flex items-center justify-center border-t border-t-secondary/30 lg:flex-col lg:min-h-screen lg:border-t-0 lg:border-r lg:border-r-secondary/10">
       <Link
         href="/"
         className="hidden lg:flex lg:basis-1/6 lg:justify-center lg:items-center"

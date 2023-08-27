@@ -9,7 +9,9 @@ export default function Home() {
       <div className="w-full max-w-[1000px]">
         <Logo className="text-4xl fill-secondary lg:hidden mb-6" />
         <div className="hidden md:block">
-          <h1 className="text-4xl mb-6">Estimate your bodyfat percentage</h1>
+          <h1 className="text-4xl mb-6 font-bold">
+            Estimate your bodyfat percentage
+          </h1>
           <p className="opacity-60 font-medium">
             This web app uses artificial intelligence to estimate your density
             taking your mensurations as an input, and computes your bodyfat

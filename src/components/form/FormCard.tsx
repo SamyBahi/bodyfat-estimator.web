@@ -6,7 +6,7 @@ interface FormCardProps extends PropsWithChildren {
 
 const FormCard = ({ title, children }: FormCardProps) => {
   return (
-    <div className="bg-secondary/10 w-full h-full p-2 rounded-md hover:bg-secondary/20 transition-colors">
+    <div className="bg-secondary/10 w-full h-full p-2 border border-secondary/10 rounded-md hover:bg-secondary/20 transition-colors">
       <h2 className="text-secondary text-opacity-50">{title}</h2>
       {children}
     </div>
