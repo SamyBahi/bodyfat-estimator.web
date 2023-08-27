@@ -24,7 +24,6 @@ const General = () => {
                 name=""
                 id=""
                 min={1}
-                max={100}
                 placeholder="Height"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Height"
@@ -36,7 +35,6 @@ const General = () => {
                 name=""
                 id=""
                 min={1}
-                max={100}
                 placeholder="Weight"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Weight"

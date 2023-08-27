@@ -13,7 +13,7 @@ export default function Home() {
           <p className="opacity-60 font-medium">
             This web app uses artificial intelligence to estimate your density
             taking your mensurations as an input, and computes your bodyfat
-            thanks to Siri's formula (1956).
+            according to Siri's formula (1956).
           </p>
           <p className="opacity-60 font-medium my-6">
             To use this tool, just enter your mensurations in the form below and

@@ -11,7 +11,6 @@ const Lower = () => {
               name=""
               id=""
               min={1}
-              max={100}
               placeholder="Thigh"
               className="remove-arrow w-full bg-transparent focus:outline-none"
               aria-label="Thigh"
@@ -24,7 +23,6 @@ const Lower = () => {
                 name=""
                 id=""
                 min={1}
-                max={100}
                 placeholder="Knee"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Knee"
@@ -36,7 +34,6 @@ const Lower = () => {
                 name=""
                 id=""
                 min={1}
-                max={100}
                 placeholder="Ankle"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Ankle"
