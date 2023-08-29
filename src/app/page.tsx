@@ -1,6 +1,5 @@
+import Providers from "@/components/Provider";
 import Form from "@/components/form/Form";
-import FormCard from "@/components/form/FormCard";
-import Switch from "@/components/form/Switch";
 import { Logo } from "@/components/svgs";
 
 export default function Home() {
@@ -22,7 +21,9 @@ export default function Home() {
             click Estimate to get your results.
           </p>
         </div>
-        <Form />
+        <Providers>
+          <Form />
+        </Providers>
       </div>
     </main>
   );
