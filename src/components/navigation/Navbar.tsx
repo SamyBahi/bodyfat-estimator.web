@@ -27,6 +27,7 @@ const Navbar = () => {
       <Link
         href="/"
         className="hidden lg:flex lg:basis-1/6 lg:justify-center lg:items-center"
+        aria-label="app logo"
       >
         <Logo className="text-5xl fill-yellow-500/80" />
       </Link>
