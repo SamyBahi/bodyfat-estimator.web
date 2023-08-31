@@ -20,6 +20,7 @@ const Upper = () => {
             <input
               type="number"
               min={1}
+              step={0.1}
               placeholder="Neck"
               className="remove-arrow w-full bg-transparent focus:outline-none"
               aria-label="Neck"
@@ -33,6 +34,7 @@ const Upper = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Chest"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Chest"
@@ -45,6 +47,7 @@ const Upper = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Waist"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Waist"
@@ -59,6 +62,7 @@ const Upper = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Biceps"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Biceps"
@@ -71,6 +75,7 @@ const Upper = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Forearm"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Forearm"
@@ -83,6 +88,7 @@ const Upper = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Wrist"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Wrist"

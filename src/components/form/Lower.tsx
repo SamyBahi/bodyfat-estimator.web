@@ -13,6 +13,7 @@ const Lower = () => {
             <input
               type="number"
               min={1}
+              step={0.1}
               placeholder="Thigh"
               className="remove-arrow w-full bg-transparent focus:outline-none"
               aria-label="Thigh"
@@ -26,6 +27,7 @@ const Lower = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Knee"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Knee"
@@ -38,6 +40,7 @@ const Lower = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Ankle"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Ankle"

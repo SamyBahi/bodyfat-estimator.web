@@ -18,7 +18,9 @@ export default function Home() {
           </p>
           <p className="opacity-60 font-medium my-6">
             To use this tool, just enter your mensurations in the form below and
-            click Estimate to get your results.
+            click Estimate to get your results. Please note that the result may
+            be off by around 1-3% according to the fact that Siri's formula may
+            also be off by around 1-3%.
           </p>
         </div>
         <Providers>

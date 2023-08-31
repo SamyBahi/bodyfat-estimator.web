@@ -14,6 +14,7 @@ const General = () => {
               type="number"
               min={1}
               max={100}
+              step={0.1}
               placeholder="Age"
               className="remove-arrow w-full bg-transparent focus:outline-none"
               aria-label="Age"
@@ -27,6 +28,7 @@ const General = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Height"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Height"
@@ -39,6 +41,7 @@ const General = () => {
               <input
                 type="number"
                 min={1}
+                step={0.1}
                 placeholder="Weight"
                 className="remove-arrow w-full bg-transparent focus:outline-none"
                 aria-label="Weight"
