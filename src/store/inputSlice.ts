@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { NumberLiteralType } from "typescript";
 
 export interface inputState {
   Age: [number] | [];
