@@ -72,32 +72,29 @@ export default function About() {
           <p className="opacity-60 font-medium mt-6">
             Thus, predicting bodyfat percentage can be useful for many reasons,
             including :
-            <ul className="list-disc ml-10">
-              <li>
-                <span className="underline font-bold">Health</span> : knowing
-                the body fat percentage can help us to identify any potential
-                health risks associated with excess body fat.
-              </li>
-              <li>
-                <span className="underline font-bold">Motivation</span> :
-                knowing the body fat percentage can help us to stay motivated to
-                lose weight and improve the health as we see the number
-                dicreasing.
-              </li>
-              <li>
-                <span className="underline font-bold">Self-image</span> :
-                knowing the body fat percentage can help us to feel more
-                confident and comfortable in the own skin.
-              </li>
-              <li>
-                <span className="underline font-bold">
-                  Athletic performance
-                </span>{" "}
-                : Body fat can affect the athletic performance in a number of
-                ways.
-              </li>
-            </ul>
           </p>
+          <ul className="list-disc ml-10 opacity-60">
+            <li>
+              <span className="underline font-bold">Health</span> : knowing the
+              body fat percentage can help us to identify any potential health
+              risks associated with excess body fat.
+            </li>
+            <li>
+              <span className="underline font-bold">Motivation</span> : knowing
+              the body fat percentage can help us to stay motivated to lose
+              weight and improve the health as we see the number dicreasing.
+            </li>
+            <li>
+              <span className="underline font-bold">Self-image</span> : knowing
+              the body fat percentage can help us to feel more confident and
+              comfortable in the own skin.
+            </li>
+            <li>
+              <span className="underline font-bold">Athletic performance</span>{" "}
+              : Body fat can affect the athletic performance in a number of
+              ways.
+            </li>
+          </ul>
         </div>
       </div>
     </main>
