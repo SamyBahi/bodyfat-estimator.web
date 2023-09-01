@@ -3,7 +3,7 @@ import { Logo } from "@/components/svgs";
 export default function About() {
   return (
     <main className="relative -top-[4rem] items-center flex flex-col h-full p-6 flex-1 w-full lg:static lg:overflow-auto">
-      <div className="w-full max-w-[1000px]">
+      <div className="w-full max-w-[1000px] animate-in">
         <Logo className="text-xl fill-secondary lg:hidden mb-6 w-full text-center" />
         <div>
           <h1 className="text-4xl mb-6 font-bold">About</h1>

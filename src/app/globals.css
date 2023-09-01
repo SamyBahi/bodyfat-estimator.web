@@ -6,16 +6,7 @@
   :root {
     --color-primary: 0 0 0;
     --color-secondary: 242 242 247;
-    /* --color-popover: 0 0 0; */
   }
-  /* [data-theme="dark"] {
-    --color-primary: 28 28 30;
-    --color-secondary: 242 242 247;
-    --color-popover: 0 0 0;
-    --color-primary: 242 242 247;
-    --color-secondary: 28 28 30;
-    --color-popover: 255 255 255;
-  } */
 }
 
 .animate-in {
