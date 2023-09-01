@@ -1,6 +1,8 @@
 import Navbar from "@/components/navigation/Navbar";
 import "./globals.css";
+import "react-toastify/dist/ReactToastify.css";
 import type { Metadata } from "next";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   title: "Bodyfat Estimator",
@@ -22,7 +24,21 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`bg-primary text-secondary lg:h-screen lg:flex`}>
+      <body
+        className={`bg-primary text-secondary min-h-screen lg:h-screen lg:flex`}
+      >
+        <ToastContainer
+          position="bottom-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss={false}
+          draggable
+          pauseOnHover={false}
+          theme="dark"
+        />
         <header className="sticky w-full top-[calc(100%-4rem)] bg-primary z-10 lg:static lg:top-0 lg:h-full lg:basis-80 xl:basis-96 ">
           <Navbar />
         </header>

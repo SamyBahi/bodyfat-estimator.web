@@ -1,12 +1,11 @@
 import Providers from "@/components/Provider";
 import Form from "@/components/form/Form";
 import { Logo } from "@/components/svgs";
-
 export default function Home() {
   return (
     <main className="relative -top-[4rem] items-center flex flex-col h-full p-6 flex-1 w-full lg:static lg:overflow-auto">
       <div className="w-full max-w-[1000px]">
-        <Logo className="text-4xl fill-secondary lg:hidden mb-6" />
+        <Logo className="text-xl fill-secondary lg:hidden mb-6 w-full text-center" />
         <div className="hidden md:block">
           <h1 className="text-4xl mb-6 font-bold">
             Estimate your bodyfat percentage
