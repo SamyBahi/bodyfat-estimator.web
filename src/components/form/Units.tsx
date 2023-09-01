@@ -31,7 +31,7 @@ const Units = () => {
   };
 
   return (
-    <div>
+    <div className="md:col-span-3 xl:col-span-1">
       <FormCard title="Units">
         <div className="flex w-full space-x-3">
           <div className="flex h-10 w-28 items-center border border-secondary/20 rounded-md mt-3 p-0.5">

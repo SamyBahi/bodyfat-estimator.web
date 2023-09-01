@@ -6,7 +6,7 @@ const General = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="md:col-span-2">
+    <div className="md:col-span-3 xl:col-span-2">
       <FormCard title="General Information">
         <div className="md:flex md:space-x-3">
           <div className="flex h-10 w-full items-center border border-secondary/20 rounded-md mt-3 p-2 bg-transparent remove-arrow md:w-1/3">
