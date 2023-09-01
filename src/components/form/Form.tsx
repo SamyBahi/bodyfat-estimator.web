@@ -46,7 +46,7 @@ const Form = () => {
       !unitsState.lbs ? (inputs["Weight"] = [inputs["Weight"] * 2.205]) : "";
 
       const res = await axios.post(
-        process.env.NEXT_PUBLIC_API_URL + "/predict",
+        "https://api.samybahi.com/bf/predict",
         inputs
       );
 
